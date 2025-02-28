@@ -1,3 +1,15 @@
+// Este componente representa el Navbar de la aplicación, utilizado para navegar entre las distintas rutas de la aplicación de carrito de compras.
+
+// Funcionalidades principales:
+// - Utiliza el contexto "CarritoContext" para obtener la lista de compras del carrito mediante `listaDeCompras`.
+// - Muestra el nombre de la aplicación "Carrito" como enlace principal que redirige a la página del carrito.
+// - Incluye un botón de navegación para colapsar el navbar en dispositivos móviles.
+// - Proporciona un enlace a la ruta "Compras" donde el usuario puede agregar artículos al carrito.
+// - Muestra un ícono de carrito de compras (ShoppingCart) en la barra de navegación, que incluye un "Badge" de Material UI, el cual muestra la cantidad de artículos en el carrito.
+// - El contador del badge se actualiza dinámicamente según la cantidad de artículos en el carrito (utilizando `listaDeCompras.length`).
+
+// Este navbar permite al usuario navegar entre la página de compras y el carrito, mientras mantiene siempre visible la cantidad de artículos en el carrito.
+
 import { Badge } from "@mui/material"
 import { ShoppingCart } from "@mui/icons-material"
 import { NavLink } from "react-router-dom"

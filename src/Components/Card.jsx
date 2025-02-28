@@ -1,3 +1,11 @@
+// El componente Card representa un artículo en la página de compras, mostrando detalles del producto y permitiendo al usuario agregarlo o quitarlo del carrito.
+
+// Funcionalidades principales:
+// - Recibe las siguientes props: `imagen`, `titulo`, `descripcion`, `precio`, `handleAgregar`, y `handleQuitar`.
+// - Utiliza el hook de estado `useState` para llevar un seguimiento de si el artículo ha sido agregado al carrito (`added`).
+// - Si el artículo ya está en el carrito (`added` es `true`), muestra un botón que permite al usuario quitar el artículo del carrito. Si no está agregado, muestra un botón para agregarlo.
+// - Muestra una tarjeta con la imagen, el título, la descripción y el precio del artículo. El estilo de la tarjeta está definido en el archivo `Card.css`.
+
 import { useState } from 'react'
 import '../Styles/Card.css'
 export const Card = ({imagen, titulo, descripcion, precio, handleAgregar, handleQuitar}) => {

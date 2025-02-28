@@ -1,3 +1,8 @@
+/*Este componente usa `useReducer` para manejar el estado del carrito. 
+Se define un `reducer` que actualiza el carrito según las acciones: agregar, aumentar cantidad, disminuir cantidad y eliminar artículos.
+Las funciones `agregarCompra`, `aumentarCantidad`, `disminuirCantidad` y `eliminarCompra` despachan las acciones correspondientes.
+El estado del carrito se proporciona a través del contexto. */
+
 import { CarritoContext } from "./CarritoContext";
 import { useReducer } from "react";
 const initialState = []

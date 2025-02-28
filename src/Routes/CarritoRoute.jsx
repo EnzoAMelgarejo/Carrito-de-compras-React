@@ -1,3 +1,11 @@
+// El componente CarritoRoute representa la página donde se muestra el contenido del carrito de compras, permitiendo al usuario ver y modificar los artículos agregados al carrito.
+
+// Funcionalidades principales:
+// - Utiliza el contexto `CarritoContext` para obtener la lista de compras (`listaDeCompras`), así como las funciones para modificar la cantidad de productos en el carrito (`aumentarCantidad`, `disminuirCantidad`, `eliminarCompra`).
+// - Muestra una tabla con los artículos en el carrito, incluyendo el nombre del artículo, precio, cantidad y un botón para eliminar el artículo del carrito.
+// - Muestra el total calculado de todos los artículos en el carrito en la última fila de la tabla.
+// - La interfaz está construida con la librería Bootstrap para los estilos, proporcionando botones y tabla con estilos predeterminados.
+
 import { useContext } from "react"
 import { CarritoContext } from "../Context/CarritoContext"
 export const CarritoRoute = () => {
